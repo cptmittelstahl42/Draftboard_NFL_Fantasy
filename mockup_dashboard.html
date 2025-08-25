@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantasy Football Draft</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .draft-board, .bye-calendar {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .draft-board table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .draft-board th, .draft-board td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    .draft-board th {
+      background-color: #eee;
+    }
+    select, input {
+      width: 100%;
+      padding: 6px;
+      font-size: 14px;
+    }
+    .bye-calendar table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .bye-calendar th, .bye-calendar td {
+      border: 1px solid #ccc;
+      padding: 6px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .bye-calendar th {
+      background-color: #eee;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>FANTASY FOOTBALL DRAFT</h1>
+  <div class="container">
+    <div class="draft-board">
+      <table>
+        <thead>
+          <tr>
+            <th>Round</th>
+            <th>Pick 1</th>
+            <th>Pick 2</th>
+            <th>Pick 3</th>
+            <th>Pick 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Malik Nabers (WR 11)</td><td></td><td></td><td></td></tr>
+          <tr><td>2</td><td>Drake London (WR 12)</td><td></td><td></td><td></td></tr>
+          <tr><td>3</td><td>Travis Etienne Jr. (RB 12)</td><td></td><td></td><td></td></tr>
+          <tr><td>4</td><td>Alvin Kamara (RB 12)</td><td></td><td></td><td></td></tr>
+          <tr><td>5</td><td><input placeholder="Dav" /></td><td><input placeholder="Jord" /></td><td><input placeholder="Rome" /></td><td><input /></td></tr>
+          <tr><td>6</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+          <tr><td>7</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+          <tr><td>8</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+          <tr><td>9</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+          <tr><td>10</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+          <tr><td>11</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+          <tr><td>12</td><td><input /></td><td><input /></td><td><input /></td><td><input /></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bye-calendar">
+      <h3>Bye Week Overview</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+            <th>11</th><th>12</th><th>13</th><th>14</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>GBB</td><td></td><td></td><td></td><td></td><td></td><td class="highlight">6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>NOS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="highlight">12</td><td></td><td></td></tr>
+          <tr><td>ATL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="highlight">12</td><td></td><td></td></tr>
+          <tr><td>JAX</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="highlight">12</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
